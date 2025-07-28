@@ -1,0 +1,203 @@
+<!-- Desktop navbar -->
+@if (!isMobileView) {
+<nav 
+class="navbar-component z-50 py-8 lg:px-16 p-6 bg-transparent hidden lg:block"
+[class]="isHomeActive ? 'fixed top-0 left-0 w-full' : 'none'">
+  <div class="nav-item lg:flex lg:flex-row lg:justify-between lg:items-center flex-col w-full">
+    <div 
+      (click)="onNavigateTo('/')" 
+      class="navbar-text cursor-pointer" 
+      [class]="isHomeActive ? 'home-active' : ''">
+      Vanesa Ruffa
+    </div>
+    <div 
+      (click)="onNavigateTo('projects')" 
+      class="navbar-text cursor-pointer"
+      [class]="{
+        'home-inactive': isHomeActive,
+        'active': isProjectsActive
+      }">
+      Proyectos
+    </div>
+    <div 
+      (click)="onNavigateTo('lecturas')" 
+      class="navbar-text cursor-pointer"
+      [class]="{
+        'home-inactive': isHomeActive,
+        'active': isLecturasActive
+      }">
+      Lecturas
+    </div>
+    <div 
+      (click)="onNavigateTo('bio')" 
+      class="navbar-text cursor-pointer" 
+      [class]="{
+              'home-inactive': isHomeActive,
+              'active': isBioActive
+      }">
+      Bio
+    </div>
+    <div 
+      (click)="onNavigateTo('contacto')" 
+      class="navbar-text cursor-pointer" 
+      [class]="{
+              'home-inactive': isHomeActive,
+              'active': isContactoActive
+      }">
+      Contacto
+    </div>
+  </div>
+</nav>
+}
+
+<!-- Mobile navbar -->
+ <nav 
+  class="navbar-component z-50 py-6 px-6 bg-transparent top-0 left-0 w-full lg:hidden"
+  [class]="isHomeActive ? 'fixed top-0 left-0 w-full' : 'none'">
+  <div class="nav-item flex flex-col w-full">
+    <div class="flex justify-between items-center w-full">
+      <div 
+        (click)="onNavigateTo('/')" 
+        class="navbar-text cursor-pointer" 
+        [class]="isHomeActive ? 'home-active' : ''">
+        Vanesa Ruffa
+      </div>
+      @if(!isHomeActive){
+      <button (click)="toggleMobileMenu()" class="text-5xl">
+        {{ isMobileMenuExpanded ? '-' : '+' }}
+      </button>
+      }
+    </div>
+
+    @if(isHomeActive){
+    <div class="mt-4 flex flex-col">
+      <div 
+        (click)="onNavigateTo('projects'); toggleMobileMenu()" 
+        class="navbar-text cursor-pointer mb-2"
+        [class]="{
+          'home-inactive': isHomeActive,
+          'active': isProjectsActive
+        }">
+        Proyectos
+      </div>
+      <div 
+        (click)="onNavigateTo('lecturas'); toggleMobileMenu()" 
+        class="navbar-text cursor-pointer mb-2" 
+        [class]="{
+          'home-inactive': isHomeActive,
+          'active': isLecturasActive
+        }">
+        Lecturas
+      </div>
+      <div 
+        (click)="onNavigateTo('bio'); toggleMobileMenu()" 
+        class="navbar-text cursor-pointer mb-2" 
+        [class]="{
+                'home-inactive': isHomeActive,
+                'active': isBioActive
+        }">
+        Bio
+      </div>
+      <div 
+        (click)="onNavigateTo('contacto'); toggleMobileMenu()" 
+        class="navbar-text cursor-pointer" 
+        [class]="{
+                'home-inactive': isHomeActive,
+                'active': isContactoActive
+        }">
+        Contacto
+      </div>
+    </div>
+    }
+
+
+    @if(isMobileMenuExpanded){
+    <div class="mt-4 flex flex-col transition-all duration-900 ease-out overflow-hidden"
+      [class.max-h-screen]="isMobileMenuExpanded || isHomeActive"
+      [class.max-h-0]="!(isMobileMenuExpanded || isHomeActive)"
+      >
+      <div 
+        (click)="onNavigateTo('projects'); toggleMobileMenu()" 
+        class="navbar-text cursor-pointer mb-2"
+        [class]="{
+          'home-inactive': isHomeActive,
+          'active': isProjectsActive
+        }">
+        Proyectos
+      </div>
+      <div 
+        (click)="onNavigateTo('lecturas'); toggleMobileMenu()" 
+        class="navbar-text cursor-pointer mb-2" 
+        [class]="{
+          'home-inactive': isHomeActive,
+          'active': isLecturasActive
+        }">
+        Lecturas
+      </div>
+      <div 
+        (click)="onNavigateTo('bio'); toggleMobileMenu()" 
+        class="navbar-text cursor-pointer mb-2" 
+        [class]="{
+                'home-inactive': isHomeActive,
+                'active': isBioActive
+        }">
+        Bio
+      </div>
+      <div 
+        (click)="onNavigateTo('contacto'); toggleMobileMenu()" 
+        class="navbar-text cursor-pointer" 
+        [class]="{
+                'home-inactive': isHomeActive,
+                'active': isContactoActive
+        }">
+        Contacto
+      </div>
+    </div>
+    }
+
+    @if(!isMobileMenuExpanded && !isHomeActive){
+    <div class="mt-4">
+      @if (isProjectsActive) {
+      <div 
+        class="navbar-text cursor-pointer" 
+        [class]="{
+          'home-inactive': isHomeActive,
+          'active': isProjectsActive
+        }">
+        Proyectos
+      </div>
+      }
+      @if(isLecturasActive){
+      <div 
+        class="navbar-text cursor-pointer" 
+        [class]="{
+          'home-inactive': isHomeActive,
+          'active': isLecturasActive
+        }">
+        Lecturas
+      </div>
+      }
+      @if(isBioActive){
+      <div 
+        class="navbar-text cursor-pointer" 
+        [class]="{
+                'home-inactive': isHomeActive,
+                'active': isBioActive
+        }">
+        Bio
+      </div>
+      }
+      @if (isContactoActive) {
+      <div 
+        class="navbar-text cursor-pointer" 
+        [class]="{
+                'home-inactive': isHomeActive,
+                'active': isContactoActive
+        }">
+        Contacto
+      </div>
+      }
+    </div>
+    }
+  </div>
+</nav>

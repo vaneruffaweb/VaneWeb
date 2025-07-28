@@ -1,0 +1,233 @@
+<app-navbar></app-navbar>
+<div class="lg:flex lg:flex-col w-full subheader-border lg:px-16 py-4 px-6">
+    <div class="nav-item lg:flex lg:justify-normal lg:items-center w-full">
+        <div 
+            (click)="onSubitemSelected('workshops')" 
+            class="subitem-text cursor-pointer" 
+            [class]="isWorkshopsActive ? 'active' : 'false'">
+            Talleres
+        </div>
+        <div 
+            (click)="onSubitemSelected('works')" 
+            class="subitem-text cursor-pointer lg:px-16" 
+            [class]="isWorksActive ? 'active' : 'false'">
+            Obras
+        </div>
+    </div>
+</div>
+<div class="mb-10 lg:px-16 px-6 py-8">
+    <div>
+        @if(showWorkshopsPage){
+            <div class="lg:w-1/2 mb-8">
+                <div class="title-text">Talleres</div>
+                <p class="authentic-text content-text mt-4">Mis talleres son una invitación a explorar la conexión entre el arte y la tecnología desde una mirada sensible y creativa. Los diseño pensando en niños, adolescentes y adultos, buscando despertar la curiosidad y fomentar la expresión personal a través de experiencias inmersivas que combinan el mundo visual, sonoro y digital. Valoro tanto la experimentación como la reflexión, y acompaño a los participantes en el descubrimiento del arte sonoro y de nuevas formas de percibir, sentir y crear. Más que un espacio de aprendizaje, cada taller es una experiencia transformadora donde la tecnología se convierte en una herramienta para potenciar la sensibilidad y la imaginación.</p>
+            </div>
+
+            <!-- Grid de cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 mt-10">
+                <!-- Fila 1 -->
+                <div class="lg:col-span-6 sm:col-span-2 relative aspect-[8/4.4] overflow-hidden shadow-lg group cursor-pointer" (click)="navigateToProjectDetails('taller-experimentacion-sonora')">
+  
+                    <!-- Imagen -->
+                    <img 
+                        src="assets/img/talleres-1-main.webp" 
+                        alt="Taller 2" 
+                        class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-150" 
+                    />
+
+                    <!-- Gradiente con transición suave -->
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-1000 ease-in-out pointer-events-none"></div>
+
+                    <!-- Contenedor de texto -->
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent lg:p-8 p-2 text-white z-10">
+                        <h3
+                        class="card-title text-[1.25rem] text-white transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:text-[#D2AFFF] origin-bottom-left"
+                        >
+                        Taller de experimentación y creación sonora: huellas sonoras itinerantes
+                        </h3>
+                        <p
+                        class="card-subtitle text-[0.75rem] text-white transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:text-[#D2AFFF] origin-bottom-left"
+                        >
+                        2023 - 2024
+                        </p>
+                    </div>
+                </div>
+            </div>
+        } 
+        @if(showWorksPage){
+            <div class="lg:w-1/2 mb-8">
+                <div class="title-text">Obras</div>
+                <p class="authentic-text content-text mt-4">Exploro la fusión entre lo ancestral y lo contemporáneo a través del arte sonoro y la composición. Mi trabajo combina la riqueza de los instrumentos autóctonos con las posibilidades creativas que ofrecen las últimas tecnologías. Busco expandir los límites de la escucha, creando paisajes sonoros que conectan tradición e innovación, invitando al público a descubrir nuevas sonoridades.</p>
+            </div>
+
+
+            <!-- Grid de cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 mt-10">
+                <!-- Fila 1 -->
+                <div class="lg:col-span-3 sm:col-span-1 relative lg:aspect-[7/8] overflow-hidden shadow-lg group cursor-pointer"
+                (click)="navigateToWorkDetails('awankay')">
+
+                    <img
+                        src="assets/img/flauta-nazca.webp"
+                        alt="Taller X"
+                        class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-150"
+                    />
+
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-1000 ease-in-out pointer-events-none"></div>
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent lg:p-8 p-2 text-white z-10">
+                        <h3 class="card-title text-xl transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-4xl origin-bottom-left">
+                        AWANK’AY
+                        </h3>
+                        <p class="card-subtitle text-xs transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-sm origin-bottom-left">
+                        2006
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 sm:col-span-2 relative aspect-[8/4.4] overflow-hidden shadow-lg group cursor-pointer"
+                    (click)="navigateToWorkDetails('ajayu-llumppa')">
+    
+                    <!-- Imagen -->
+                    <img 
+                        src="assets/img/obras-1-main.webp" 
+                        alt="Taller 2" 
+                        class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-150" 
+                    />
+
+                    <!-- Gradiente con transición suave -->
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-1000 ease-in-out pointer-events-none"></div>
+
+                    <!-- Contenedor de texto -->
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent lg:p-8 p-2 text-white z-10">
+                        <h3
+                        class="card-title text-[1.25rem] text-white transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:text-[#D2AFFF] origin-bottom-left"
+                        >
+                        AJAYU LLUMPPA
+                        </h3>
+                        <p
+                        class="card-subtitle text-[0.75rem] text-white transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:text-[#D2AFFF] origin-bottom-left"
+                        >
+                        2004
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 sm:col-span-1 relative lg:aspect-[7/8] overflow-hidden shadow-lg group cursor-pointer"
+                (click)="navigateToWorkDetails('el-pajaro-maravilloso')">
+
+                    <img 
+                        src="assets/img/el-pajaro-maravilloso.webp" 
+                        alt="Taller 3" 
+                        class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-150"
+                    />
+
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-1000 ease-in-out pointer-events-none"></div>
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent lg:p-8 p-2 text-white z-10">
+                        <h3 class="card-title text-xl transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-4xl origin-bottom-left">
+                        EL PÁJARO MARAVILLOSO
+                        </h3>
+                        <p class="card-subtitle text-xs transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-sm origin-bottom-left">
+                        2018
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 mt-10">
+                <!-- Fila 2 -->
+                <div class="lg:col-span-6 sm:col-span-2 relative aspect-[8/4.4] overflow-hidden shadow-lg group cursor-pointer"
+                    (click)="navigateToWorkDetails('los-siete-brazos')">
+    
+                    <!-- Imagen -->
+                    <img 
+                        src="assets/img/los-siete-brazos.webp" 
+                        alt="Taller 2" 
+                        class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-150" 
+                    />
+
+                    <!-- Gradiente con transición suave -->
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-1000 ease-in-out pointer-events-none"></div>
+
+                    <!-- Contenedor de texto -->
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent lg:p-8 p-2 text-white z-10">
+                        <h3
+                        class="card-title text-[1.25rem] text-white transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:text-[#D2AFFF] origin-bottom-left"
+                        >
+                        LOS SIETE BRAZOS
+                        </h3>
+                        <p
+                        class="card-subtitle text-[0.75rem] text-white transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:text-[#D2AFFF] origin-bottom-left"
+                        >
+                        2007
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 sm:col-span-1 relative lg:aspect-[7/8] overflow-hidden shadow-lg group cursor-pointer"
+                (click)="navigateToWorkDetails('pequeñas-estampillas-sonoras')">
+
+                    <img
+                        src="assets/img/pequeñas-estampillas-sonoras.webp"
+                        alt="Taller X"
+                        class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-150"
+                    />
+
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-1000 ease-in-out pointer-events-none"></div>
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent lg:p-8 p-2 text-white z-10">
+                        <h3 class="card-title text-xl transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-4xl origin-bottom-left">
+                        PEQUEÑAS ESTAMPILLAS SONORAS
+                        </h3>
+                        <p class="card-subtitle text-xs transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-sm origin-bottom-left">
+                        2025
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 sm:col-span-1 relative lg:aspect-[7/8] overflow-hidden shadow-lg group cursor-pointer"
+                (click)="navigateToWorkDetails('gotas-hilos-vertientes')">
+
+                    <img 
+                        src="assets/img/gotas-hilos-vertientes.webp" 
+                        alt="Taller 3" 
+                        class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-150"
+                    />
+
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-1000 ease-in-out pointer-events-none"></div>
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent lg:p-8 p-2 text-white z-10">
+                        <h3 class="card-title text-xl transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-4xl origin-bottom-left">
+                        GOTAS, HILOS, VERTIENTES SONORAS... LA SEQUEDAD
+                        </h3>
+                        <p class="card-subtitle text-xs transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-sm origin-bottom-left">
+                        2025
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 mt-10">
+                <!-- Fila 3 -->
+                <div class="lg:col-span-3 sm:col-span-1 relative lg:aspect-[7/8] overflow-hidden shadow-lg group cursor-pointer"
+                (click)="navigateToWorkDetails('a-mis-maestros')">
+                    <img
+                        src="assets/img/a-mis-maestros.webp"
+                        alt="Taller X"
+                        class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-150"
+                    />
+
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-1000 ease-in-out pointer-events-none"></div>
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent lg:p-8 p-2 text-white z-10">
+                        <h3 class="card-title text-xl transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-4xl origin-bottom-left">
+                        A MIS MAESTROS
+                        </h3>
+                        <p class="card-subtitle text-xs transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-sm origin-bottom-left">
+                        2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

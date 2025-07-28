@@ -1,0 +1,165 @@
+<app-navbar></app-navbar>
+<div class="lg:flex lg:flex-col w-full subheader-border lg:px-16 py-4 px-6">
+    <div class="nav-item lg:flex lg:justify-normal lg:items-center w-full">
+        <div (click)="onSubitemSelected('publications')" class="subitem-text cursor-pointer" [class]="isPublicationsActive ? 'active' : 'false'">Publicaciones</div>
+        <div (click)="onSubitemSelected('press')" class="subitem-text cursor-pointer lg:px-16" [class]="isPressActive ? 'active' : 'false'">Prensa</div>
+    </div>
+</div>
+<div class="mb-10 lg:px-16 px-6 py-8">
+    <div>
+        @if(showPublicationsPage){
+            <div class="lg:w-1/2 mb-8">
+                <div class="title-text">Publicaciones</div>
+                <p class="authentic-text content-text mt-4">Acá comparto ensayos, investigaciones y partituras sobre arte sonoro, tecnología y experimentación. Algunos fueron publicados en la UNTREF, otros en distintos espacios, pero todos están disponibles online.</p>
+                <p class="authentic-text content-text mt-4">Me interesa pensar el arte en diálogo con la gestión, la educación y otras disciplinas, explorando nuevas formas de creación y reflexión. Esta sección va a seguir creciendo con nuevos materiales, así que volvé cuando quieras. Ojalá te sirva e inspire.</p>            
+                <div class="mt-8 space-y-8">
+                    <p class="link-text">
+                        <a 
+                            href="https://www.fhuc.unl.edu.ar/institucional/wp-content/uploads/sites/3/2018/08/Musicos-en-Congreso-2024.pdf#page203" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Mapa histórico sonoro de Argentina: huellas migrantes, devenir sonoro de la inmigración ultramarina en la Argentina.
+                        </a>
+                    </p>
+
+                    <p class="link-text">
+                        <a 
+                            href="https://blog.bela.io/migrant-sound-stamps/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Migrant Sound Stamps. Argentinian overseas migration brought to life in this interactive sound sculpture
+                        </a>
+                    </p>
+
+                    <p class="link-text cursor-pointer">
+                        <a 
+                            href="https://revistas.untref.edu.ar/index.php/innova/article/view/1378" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Huellas Migrantes, devenir sonoro de la inmigración ultramarina en Argentina.
+                        </a>
+                    </p>
+
+                    <p class="link-text cursor-pointer">
+                        <a 
+                            href="https://revistas.untref.edu.ar/index.php/innova/article/view/1001" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Sonido, Referencialidad e Identidad: El Proyecto Argentina Suena.
+                        </a>
+                    </p>                
+                </div>
+            </div>
+            } 
+        @if(showPressPage){
+            <div class="lg:w-1/2 mb-8">
+                <div class="title-text">Prensa</div>                
+                <p class="authentic-text content-text mt-4">En esta sección vas a encontrar notas, entrevistas y reseñas sobre mi trabajo en arte sonoro, experimentación y gestión cultural. Son miradas desde distintos medios y espacios que aportan otras formas de contar lo que hago.</p>
+                <div class="mt-8 space-y-8">
+                    <p class="link-text">
+                        <a 
+                            href="https://podcasts.apple.com/gb/podcast/kurt-elling-domus-artis-y-jorge-haro-3-formas-de/id1488076634?i=1000705123654" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Kurt Elling, Domus Artis y Jorge Haro: 3 formas de sentir la música.
+                        </a>
+                    </p>
+
+                    <p class="link-text">
+                        <a 
+                            href="https://museomoderno.org/escuchar-sonidos-visuales-2024/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Escuchar MINI. Oídos atentos, pequeñas y pequeños artistas sonoros
+                        </a>
+                    </p>
+
+                    <p class="link-text cursor-pointer">
+                        <a 
+                            href="https://www.iaa.fadu.uba.ar/?p=18248" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Seminario de Crítica: «¿Qué ficciones podemos diseñar a través de estar a la escucha? Auralidad del mapa, ficción de territorio»
+                        </a>
+                    </p>
+
+                    <p class="link-text cursor-pointer">
+                        <a 
+                            href="https://untref.edu.ar/muntref/es/muestras/huellas-migrantes/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Huellas Migrantes, Devenir sonoro de la inmigración ultramarina en la Argentina
+                        </a>
+                    </p>
+
+                    <p class="link-text cursor-pointer">
+                        <a 
+                            href="https://www.radionacional.com.ar/huellas-migrantes-la-muestra-que-nos-traer-sonidos-del-pasado-al-presente/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            "Huellas Migrantes": La muestra que nos trae sonidos del pasado al presente
+                        </a>
+                    </p>
+
+                    <p class="link-text cursor-pointer">
+                        <a 
+                            href="https://www.alternativateatral.com/obra83570-laberinto-sonoro" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            LABERINTO SONORO - Teatro Silencio de Negras
+                        </a>
+                    </p>
+
+                    <p class="link-text cursor-pointer">
+                        <a 
+                            href="https://cepia.artes.unc.edu.ar/files/FA_CEPIA_XXVJornadasDeInv_Programa-1.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            XV Jornadas de Investigación en Artes www.artes.unc.edu.ar | 2022 14, 15 y 16 de septiembre Pabellón CePIA · FA UNC
+                        </a>
+                    </p>
+
+                    <p class="link-text cursor-pointer">
+                        <a 
+                            href="https://www.tiempoar.com.ar/ta_article/una-muestra-que-propone-un-viaje-al-pasado-para-traer-sus-sonidos-al-presente/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Una muestra que propone un viaje al pasado para traer sus sonidos al presente
+                        </a>
+                    </p>
+
+                    <p class="link-text cursor-pointer">
+                        <a 
+                            href="https://www.emc-imc.org/uploads/media/IRC_2010_participants-1.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            2010 INTERNATIONAL ROSTRUM OF COMPOSERS TRIBUNE INTERNATIONALE DES COMPOSITEURS 2010 Lisbon, Portugal, May 31 – June 4 2010
+                        </a>
+                    </p>
+                    <p class="link-text cursor-pointer">
+                        <a 
+                            href="https://drive.google.com/file/d/1PNhLsQRKaS5iTOWEPkyVLl-vtzK7EQNr/view?usp=sharing" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            La alquimia de la creación musical
+                        </a>
+                    </p>             
+                </div>
+            </div>
+            }
+    </div>
+</div>

@@ -1,0 +1,24 @@
+.card-title {
+    font-size: 32px;
+    font-family: Josefin Sans;
+    font-weight: 500;
+    /* color: #F8F2F7; */
+}
+
+.card-subtitle {
+    font-size: 13px;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    /* color: #D6CFDF; */
+}
+
+@media (max-width: 768px){
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-subtitle {
+        font-size: 12px;
+    }
+}
+

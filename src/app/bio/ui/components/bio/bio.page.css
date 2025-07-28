@@ -1,0 +1,21 @@
+.first-title{
+    color: var(--heading, #6535DD);
+    font-family: "Josefin Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.second-title {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+
+.content-text {
+    color: #000000;
+}

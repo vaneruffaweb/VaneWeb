@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  .navbar-component {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #6535DD;
+}
+
+.home-active {
+  color: var(--active-home-item);
+}
+
+.home-inactive {
+  color: var(--inactive-home-items);
+}

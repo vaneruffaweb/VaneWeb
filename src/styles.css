@@ -1,1 +1,107 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'AuthenticSans150';
+    src: url('/assets/fonts/AUTHENTICSans-150.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.authentic-text {
+    font-family: 'AuthenticSans', sans-serif;
+}
+
+:root {
+    --violet: #BBA0FF;
+    --navbar-inactive: #CBBAE3;
+    --violet-strong: #6535DD;
+    --active-home-item: #BBA0FF;
+    --inactive-home-items: #F8F2F3;
+    --basic-text: #444444;
+    --title-color: #F8F2F7;
+}
+
+/*----- Fonts ----- */
+
+.navbar-text {
+    font-size: 40px;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    color: #CBBAE3;
+}
+
+.navbar-text.active {
+    color: var(--violet-strong);
+}
+
+.subitem-text {
+    font-size: 32px;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    color: var(--navbar-inactive);
+}
+
+.subitem-text.active {
+    color: var(--violet-strong);
+}
+
+.title-text {
+    font-size: 32px;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    color: var(--violet-strong);
+}
+
+.content-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--basic-text);
+    line-height: 28px;
+}
+
+.link-text{
+    color: var(--heading, #6535DD);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+/* .card-title {
+    color: var(--bg, #F8F2F7);
+    font-family: "Josefin Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-subtitle {
+    color: #D6CFDF;
+    font-family: "Josefin Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.65px;
+    text-transform: capitalize;
+} */
+
+/* Borders */
+
+.subheader-border{
+    border-bottom: 1px solid #D9D9D9;
+    border-top: 1px solid #D9D9D9;
+}
+
+/* Containers */
+
+.subheader-container{
+    display: flex;
+    flex-direction: column;
+}
