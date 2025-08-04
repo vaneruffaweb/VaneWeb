@@ -18,15 +18,15 @@
 <div class="mb-10 lg:px-16 px-6 py-8">
     <div>
         @if(showWorkshopsPage){
-            <div class="lg:w-1/2 mb-8">
+            <div class="lg:w-2/3 mb-8">
                 <div class="title-text">Talleres</div>
-                <p class="authentic-text content-text mt-4">Mis talleres son una invitación a explorar la conexión entre el arte y la tecnología desde una mirada sensible y creativa. Los diseño pensando en niños, adolescentes y adultos, buscando despertar la curiosidad y fomentar la expresión personal a través de experiencias inmersivas que combinan el mundo visual, sonoro y digital. Valoro tanto la experimentación como la reflexión, y acompaño a los participantes en el descubrimiento del arte sonoro y de nuevas formas de percibir, sentir y crear. Más que un espacio de aprendizaje, cada taller es una experiencia transformadora donde la tecnología se convierte en una herramienta para potenciar la sensibilidad y la imaginación.</p>
+                <p class="authentic-text content-text mt-[16px]">Mis talleres son una invitación a explorar la conexión entre el arte y la tecnología desde una mirada sensible y creativa. Los diseño pensando en niños, adolescentes y adultos, buscando despertar la curiosidad y fomentar la expresión personal a través de experiencias inmersivas que combinan el mundo visual, sonoro y digital. Valoro tanto la experimentación como la reflexión, y acompaño a los participantes en el descubrimiento del arte sonoro y de nuevas formas de percibir, sentir y crear. Más que un espacio de aprendizaje, cada taller es una experiencia transformadora donde la tecnología se convierte en una herramienta para potenciar la sensibilidad y la imaginación.</p>
             </div>
 
             <!-- Grid de cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 mt-10">
+            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-12 gap-6 mt-[32px]">
                 <!-- Fila 1 -->
-                <div class="lg:col-span-6 sm:col-span-2 relative aspect-[8/4.4] overflow-hidden shadow-lg group cursor-pointer" (click)="navigateToProjectDetails('taller-experimentacion-sonora')">
+                <div class="lg:col-span-6 sm:col-span-1 relative h-64 lg:h-96 overflow-hidden shadow-lg group cursor-pointer" (click)="navigateToProjectDetails('taller-experimentacion-sonora')">
   
                     <!-- Imagen -->
                     <img 
@@ -55,16 +55,16 @@
             </div>
         } 
         @if(showWorksPage){
-            <div class="lg:w-1/2 mb-8">
+            <div class="lg:w-2/3 mb-8">
                 <div class="title-text">Obras</div>
                 <p class="authentic-text content-text mt-4">Exploro la fusión entre lo ancestral y lo contemporáneo a través del arte sonoro y la composición. Mi trabajo combina la riqueza de los instrumentos autóctonos con las posibilidades creativas que ofrecen las últimas tecnologías. Busco expandir los límites de la escucha, creando paisajes sonoros que conectan tradición e innovación, invitando al público a descubrir nuevas sonoridades.</p>
             </div>
 
 
             <!-- Grid de cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 mt-10">
+            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-12 gap-6 mt-[32px]">
                 <!-- Fila 1 -->
-                <div class="lg:col-span-3 sm:col-span-1 relative lg:aspect-[7/8] overflow-hidden shadow-lg group cursor-pointer"
+                <div class="lg:col-span-3 sm:col-span-1 relative h-64 lg:h-96 overflow-hidden shadow-lg group cursor-pointer"
                 (click)="navigateToWorkDetails('awankay')">
 
                     <img
@@ -85,7 +85,7 @@
                     </div>
                 </div>
 
-                <div class="lg:col-span-6 sm:col-span-2 relative aspect-[8/4.4] overflow-hidden shadow-lg group cursor-pointer"
+                <div class="lg:col-span-6 sm:col-span-1 relative h-64 lg:h-96 overflow-hidden shadow-lg group cursor-pointer"
                     (click)="navigateToWorkDetails('ajayu-llumppa')">
     
                     <!-- Imagen -->
@@ -113,7 +113,7 @@
                     </div>
                 </div>
 
-                <div class="lg:col-span-3 sm:col-span-1 relative lg:aspect-[7/8] overflow-hidden shadow-lg group cursor-pointer"
+                <div class="lg:col-span-3 sm:col-span-1 relative h-64 lg:h-96 overflow-hidden shadow-lg group cursor-pointer"
                 (click)="navigateToWorkDetails('el-pajaro-maravilloso')">
 
                     <img 
@@ -134,9 +134,9 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 mt-10">
+            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-12 gap-6 mt-[16px]">
                 <!-- Fila 2 -->
-                <div class="lg:col-span-6 sm:col-span-2 relative aspect-[8/4.4] overflow-hidden shadow-lg group cursor-pointer"
+                <div class="lg:col-span-6 sm:col-span-1 relative h-64 lg:h-96 overflow-hidden shadow-lg group cursor-pointer"
                     (click)="navigateToWorkDetails('los-siete-brazos')">
     
                     <!-- Imagen -->
@@ -164,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="lg:col-span-3 sm:col-span-1 relative lg:aspect-[7/8] overflow-hidden shadow-lg group cursor-pointer"
+                <div class="lg:col-span-3 sm:col-span-1 relative h-64 lg:h-96 overflow-hidden shadow-lg group cursor-pointer"
                 (click)="navigateToWorkDetails('pequeñas-estampillas-sonoras')">
 
                     <img
@@ -185,7 +185,7 @@
                     </div>
                 </div>
 
-                <div class="lg:col-span-3 sm:col-span-1 relative lg:aspect-[7/8] overflow-hidden shadow-lg group cursor-pointer"
+                <div class="lg:col-span-3 sm:col-span-1 relative h-64 lg:h-96 overflow-hidden shadow-lg group cursor-pointer"
                 (click)="navigateToWorkDetails('gotas-hilos-vertientes')">
 
                     <img 
@@ -201,14 +201,14 @@
                         GOTAS, HILOS, VERTIENTES SONORAS... LA SEQUEDAD
                         </h3>
                         <p class="card-subtitle text-xs transition-all duration-300 group-hover:text-[#D2AFFF] group-hover:scale-110 group-hover:text-sm origin-bottom-left">
-                        2025
+                        2023
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 mt-10">
+            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-12 gap-6 mt-[16px]">
                 <!-- Fila 3 -->
-                <div class="lg:col-span-3 sm:col-span-1 relative lg:aspect-[7/8] overflow-hidden shadow-lg group cursor-pointer"
+                <div class="lg:col-span-3 sm:col-span-1 relative h-64 lg:h-96 overflow-hidden shadow-lg group cursor-pointer"
                 (click)="navigateToWorkDetails('a-mis-maestros')">
                     <img
                         src="assets/img/a-mis-maestros.webp"
