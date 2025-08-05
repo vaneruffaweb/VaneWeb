@@ -86,11 +86,16 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 'gotas-hilos-vertientes',
     category: 'obras',
-    mainImage: 'assets/img/gotas-hilos-vertientes.webp',
+    mainImage: 'assets/img/gotas-main.webp',
     title: 'GOTAS, HILOS, VERTIENTES SONORAS… LA SEQUEDAD',
     subtitle: 'Instalación sonora interactiva <br> Vanesa Ruffa y Francisco Huici <br> Creada para el ciclo “LABERINTO SONORO”, dirigido por Eduardo Pérez Winter, en el Teatro Silencio de Negras',
     description: 'La instalación sonora interactiva "gotas, hilos, vertientes sonoras… la sequedad" de Vanesa Ruffa y Francisco Huici explora la analogía entre la gota de agua y la frecuencia sonora. La obra busca reflejar el viaje de la gota hacia la línea y la masa sonora, y también explora los conceptos de seco, húmedo y mojado para reflejar el devenir de la vida de la gota de agua y del sonido. La instalación invita a la reflexión y a la interacción de los oyentes, quienes pueden generar colores sonoros a través de su intervención con la obra. El objetivo es crear una experiencia perceptiva que ponga en acción la escucha y la transforme en una herramienta creativa. <br><br> La instalación "gotas, hilos, vertientes sonoras… la sequedad" se divide en 4 estaciones que intervienen diferentes espacios del Teatro Silencio de Negras: <br><br> 1. Gotas: Campanas de viento colgantes que producen sonidos puntuales y crean un "arcoíris sonoro" en la sala. <br> 2. Hilos: Parlantes en las escaleras que reproducen un procesamiento sonoro de las campanas de viento y guían al público hacia la próxima estación. <br> 3. Vertientes: En el escenario, parlantes emiten un sonido de agua corriendo que crece en intensidad y se transforma en un río caudaloso, seguido de un silencio total. <br> 4. Sequedad: En una sala en penumbras, el público escucha el crepitar de hojas secas en el piso, seguido de un procesamiento sonoro de las hojas secas por los parlantes. <br><br> La instalación crea un viaje sonoro a través de diferentes espacios y texturas sonoras, desde la delicadeza de las campanas de viento hasta la intensidad del río y la sequedad de las hojas.',
-    galleryImages: [],
+    galleryImages: [
+      'assets/img/gotas-1.webp',
+      'assets/img/gotas-2.webp',
+      'assets/img/gotas-4.webp',
+      'assets/img/gotas-3.webp',
+    ],
     videoLink: 'https://www.youtube.com/embed/oH7BijNFlHU?si=3ibfi_Y3vCTYnRmZ',
   }, 
   {
@@ -101,5 +106,15 @@ export const PROJECTS_DATA: Project[] = [
     subtitle: 'Letra: Melina Pogorelsky <br> Música: Maria Vanesa Ruffa',
     description: 'Canción infantil que forma parte del repertorio de la agrupación de música para las infancias, “La Banda de Don Florencio”. La canción fue escrita y compuesta especialmente por sus autoras para conmemorar el día del maestro del 21 de septiembre de 2017, en el Jardín Florencio Escardó. Institución educativa de gestión pública de la Ciudad Autónoma de Buenos Aires (CABA). <br><br> Forma parte del 1º álbum de la Banda, grabada y mezclada en el Espacio Cultural Domus Artis, por Francisco Huici y Gonzalo Ilutovich. Las y los músicos que participaron son: <br><br> Créditos: <br> - Natasha Sterman: coros <br> - Sebastián Carreras: Guitarra y coros <br> - Federico Orecchio: piano <br> - Leo Paganini: Clarinete <br> - María Vanesa Ruffa: Kalimba, Clarinete bajo y voz <br> - Gustavo Martín Kriger: Cuatro Venezolano y Accesorios <br> - Laura Tappata: Bajo <br> - Adrian Anarella: Percusión y accesorios',
     galleryImages: [],
+  }, 
+  {
+    id: 'maninea',
+    category: 'obras',
+    mainImage: 'assets/img/maninea-main.webp',
+    title: 'MANINEA',
+    subtitle: 'Documental sonoro',
+    description: 'MANINEA representa por un lado el dolor del desarraigo del/la emigrante que deja su tierra natal, su familia, su hogar, para embarcarse en un viaje hacia una nueva tierra. Por el otro, la llegada a ese nuevo suelo y el encuentro entre las huellas culturales que se cargan y las que ofrece este nuevo continente, el proceso de deconstrucción del/la inmigrante y de transmutación en ese diálogo intercultural que se da en los procesos de e/inmigración.<br><br> La obra contiene archivos sonoros del Archivo General de La Nación (AGN - Argentina); sonidos de agua y sirenas de barcos; instrumentos autóctonos de América y testimonios en español y calabrés de familiares de la compositora, inmigrantes italianos/as llegados/as a Argentina en 1947, entre ellos su nonna "Manina" (Mariana), de 103 años. El nombre de la obra, "Maninea" (Marianita), proviene del apodo que dieron sus familiares italianos a la compositora por su enorme parecido con su nonna. <br><br> La obra tuvo su estreno mundial en septiembre de 2022 en el Teatro Municipal de Bahía Blanca, en el marco del Ciclo Bahía [in]sonora 2022, organizado por Ricardo de Armas, Nicolás Testoni y Raúl Minsburg.',
+    galleryImages: [],
+    audioEmbed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1231491043&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
   }
 ];
